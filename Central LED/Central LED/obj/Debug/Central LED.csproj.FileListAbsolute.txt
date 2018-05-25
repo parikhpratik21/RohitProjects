@@ -1,0 +1,18 @@
+C:\Pratik\Rohit\Central Led Software\Code\Central LED\Central LED\bin\Debug\Central LED.exe.config
+C:\Pratik\Rohit\Central Led Software\Code\Central LED\Central LED\bin\Debug\Central LED.exe
+C:\Pratik\Rohit\Central Led Software\Code\Central LED\Central LED\bin\Debug\Central LED.pdb
+C:\Pratik\Rohit\Central Led Software\Code\Central LED\Central LED\obj\Debug\Central LED.csprojResolveAssemblyReference.cache
+C:\Pratik\Rohit\Central Led Software\Code\Central LED\Central LED\obj\Debug\View\DisplaySetting.baml
+C:\Pratik\Rohit\Central Led Software\Code\Central LED\Central LED\obj\Debug\View\MainWindow.baml
+C:\Pratik\Rohit\Central Led Software\Code\Central LED\Central LED\obj\Debug\View\DisplaySetting.g.cs
+C:\Pratik\Rohit\Central Led Software\Code\Central LED\Central LED\obj\Debug\View\MainWindow.g.cs
+C:\Pratik\Rohit\Central Led Software\Code\Central LED\Central LED\obj\Debug\App.g.cs
+C:\Pratik\Rohit\Central Led Software\Code\Central LED\Central LED\obj\Debug\Central LED_MarkupCompile.cache
+C:\Pratik\Rohit\Central Led Software\Code\Central LED\Central LED\obj\Debug\Central LED.g.resources
+C:\Pratik\Rohit\Central Led Software\Code\Central LED\Central LED\obj\Debug\Central_LED.Properties.Resources.resources
+C:\Pratik\Rohit\Central Led Software\Code\Central LED\Central LED\obj\Debug\Central LED.csproj.GenerateResource.Cache
+C:\Pratik\Rohit\Central Led Software\Code\Central LED\Central LED\obj\Debug\Central LED.exe
+C:\Pratik\Rohit\Central Led Software\Code\Central LED\Central LED\obj\Debug\Central LED.pdb
+C:\Pratik\Rohit\Git_RohitProjects_Code\Central LED\Central LED\bin\Debug\Central LED.exe.config
+C:\Pratik\Rohit\Git_RohitProjects_Code\Central LED\Central LED\obj\Debug\Central LED.exe
+C:\Pratik\Rohit\Git_RohitProjects_Code\Central LED\Central LED\obj\Debug\Central LED.pdb
