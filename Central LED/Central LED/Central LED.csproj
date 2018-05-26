@@ -79,9 +79,11 @@
     <Compile Include="Controls\LineSettingControl.xaml.cs">
       <DependentUpon>LineSettingControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Converter\LineControlGridVisibilityConverter.cs" />
     <Compile Include="Helper\Enums.cs" />
     <Compile Include="ViewModel\BaseViewModel.cs" />
     <Compile Include="ViewModel\DisplayControlViewModel.cs" />
+    <Compile Include="ViewModel\DisplaySettingViewModel.cs" />
     <Compile Include="ViewModel\LineControlViewModel.cs" />
     <Compile Include="View\DisplaySetting.xaml.cs">
       <DependentUpon>DisplaySetting.xaml</DependentUpon>

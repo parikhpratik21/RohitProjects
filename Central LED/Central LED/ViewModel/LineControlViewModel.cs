@@ -138,6 +138,19 @@ namespace Central_LED.ViewModel
                 OnPropertyChanged("BlinkingMessage2");
             }
         }
+
+        public string Name
+        {
+            get
+            {
+                return _name;
+            }
+            set
+            {
+                _name = value;
+                OnPropertyChanged("Name");
+            }
+        }
         #endregion
 
         #region Constructor
@@ -145,6 +158,7 @@ namespace Central_LED.ViewModel
         #endregion
 
         #region Field
+        private string _name;
         private int _selectedLineType;
         private string _parameterValue;
         private string _scrollingMessage;

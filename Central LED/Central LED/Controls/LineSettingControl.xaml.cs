@@ -24,5 +24,22 @@ namespace Central_LED.Controls
         {
             InitializeComponent();
         }
+
+        private void UserControl_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if(DataContext != null)
+            {
+                MainGrid.Visibility = System.Windows.Visibility.Visible; 
+            }
+            else
+            {
+                MainGrid.Visibility = System.Windows.Visibility.Collapsed;
+            }
+        }
+
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            MainGrid.Visibility = System.Windows.Visibility.Collapsed;
+        }
     }
 }

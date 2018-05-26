@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Central_LED.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,18 @@ namespace Central_LED
         public MainWindow()
         {
             InitializeComponent();
+        }        
+
+        private void miDisplay_Click(object sender, RoutedEventArgs e)
+        {
+            DisplaySettingViewModel viewModel = new DisplaySettingViewModel();
+            DisplaySetting displaySetting = new DisplaySetting(viewModel);
+            displaySetting.ShowDialog();
+        }
+
+        private void miModbus_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
