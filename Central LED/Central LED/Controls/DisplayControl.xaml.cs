@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Central_LED.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,6 +28,16 @@ namespace Central_LED.Controls
 
         private void UserControl_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
         {
+            if (_isUpdateLineEventInitialize == false)
+            {
+                var displayViewModel = DataContext as DisplayControlViewModel;
+                if (displayViewModel != null)
+                {
+                    displayViewModel.OnUpdateSelectedLine += UpdateSelectedLine;
+                    _isUpdateLineEventInitialize = true;
+                }
+            }
+
             if(DataContext != null)
             {
                 MainGrid.Visibility = System.Windows.Visibility.Visible;
@@ -39,7 +50,30 @@ namespace Central_LED.Controls
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
-            MainGrid.Visibility = System.Windows.Visibility.Collapsed;
+            if (DataContext == null)
+            {
+                MainGrid.Visibility = System.Windows.Visibility.Collapsed;
+            }
+
+            var displayViewModel = DataContext as DisplayControlViewModel;
+            if(displayViewModel != null)
+            {
+                displayViewModel.OnUpdateSelectedLine += UpdateSelectedLine;
+                _isUpdateLineEventInitialize = true;
+            }
         }
+
+        private void UpdateSelectedLine()
+        {
+            var displayViewModel = DataContext as DisplayControlViewModel;
+            if (displayViewModel != null)
+            {
+                lineSettingControl.UpdateSelectedLine(displayViewModel.SelectedLine);
+            }
+        }
+
+        #region Field
+        private bool _isUpdateLineEventInitialize;
+        #endregion
     }
 }

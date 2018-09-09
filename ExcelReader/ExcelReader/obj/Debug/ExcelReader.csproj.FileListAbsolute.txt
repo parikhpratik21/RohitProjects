@@ -1,0 +1,13 @@
+C:\Pratik\Rohit\Git_RohitProjects_Code\ExcelReader\ExcelReader\obj\Debug\ExcelReader.csproj.ResolveComReference.cache
+C:\Pratik\Rohit\Git_RohitProjects_Code\ExcelReader\ExcelReader\obj\Debug\MainWindow.baml
+C:\Pratik\Rohit\Git_RohitProjects_Code\ExcelReader\ExcelReader\obj\Debug\MainWindow.g.cs
+C:\Pratik\Rohit\Git_RohitProjects_Code\ExcelReader\ExcelReader\obj\Debug\App.g.cs
+C:\Pratik\Rohit\Git_RohitProjects_Code\ExcelReader\ExcelReader\obj\Debug\ExcelReader.csproj.GenerateResource.Cache
+C:\Pratik\Rohit\Git_RohitProjects_Code\ExcelReader\ExcelReader\bin\Debug\ExcelReader.exe.config
+C:\Pratik\Rohit\Git_RohitProjects_Code\ExcelReader\ExcelReader\bin\Debug\ExcelReader.exe
+C:\Pratik\Rohit\Git_RohitProjects_Code\ExcelReader\ExcelReader\bin\Debug\ExcelReader.pdb
+C:\Pratik\Rohit\Git_RohitProjects_Code\ExcelReader\ExcelReader\obj\Debug\ExcelReader_MarkupCompile.cache
+C:\Pratik\Rohit\Git_RohitProjects_Code\ExcelReader\ExcelReader\obj\Debug\ExcelReader.g.resources
+C:\Pratik\Rohit\Git_RohitProjects_Code\ExcelReader\ExcelReader\obj\Debug\ExcelReader.Properties.Resources.resources
+C:\Pratik\Rohit\Git_RohitProjects_Code\ExcelReader\ExcelReader\obj\Debug\ExcelReader.exe
+C:\Pratik\Rohit\Git_RohitProjects_Code\ExcelReader\ExcelReader\obj\Debug\ExcelReader.pdb

@@ -18,7 +18,6 @@ C:\Pratik\Rohit\Git_RohitProjects_Code\Central LED\Central LED\obj\Debug\Central
 C:\Pratik\Rohit\Git_RohitProjects_Code\Central LED\Central LED\obj\Debug\Central LED.pdb
 C:\Pratik\Rohit\Git_RohitProjects_Code\Central LED\Central LED\bin\Debug\Central LED.exe
 C:\Pratik\Rohit\Git_RohitProjects_Code\Central LED\Central LED\bin\Debug\Central LED.pdb
-C:\Pratik\Rohit\Git_RohitProjects_Code\Central LED\Central LED\obj\Debug\Central LED.csprojResolveAssemblyReference.cache
 C:\Pratik\Rohit\Git_RohitProjects_Code\Central LED\Central LED\obj\Debug\Controls\DisplayControl.baml
 C:\Pratik\Rohit\Git_RohitProjects_Code\Central LED\Central LED\obj\Debug\View\DisplaySetting.baml
 C:\Pratik\Rohit\Git_RohitProjects_Code\Central LED\Central LED\obj\Debug\View\MainWindow.baml
@@ -34,3 +33,44 @@ C:\Pratik\Rohit\Git_RohitProjects_Code\Central LED\Central LED\obj\Debug\Control
 C:\Pratik\Rohit\Git_RohitProjects_Code\Central LED\Central LED\obj\Debug\Central LED.g.resources
 C:\Pratik\Rohit\Git_RohitProjects_Code\Central LED\Central LED\obj\Debug\Central_LED.Properties.Resources.resources
 C:\Pratik\Rohit\Git_RohitProjects_Code\Central LED\Central LED\obj\Debug\Central LED.csproj.GenerateResource.Cache
+C:\Pratik\Rohit\Git_RohitProjects_Code\Central LED\Central LED\obj\Debug\View\ModbusSetting.baml
+C:\Pratik\Rohit\Git_RohitProjects_Code\Central LED\Central LED\obj\Debug\View\ModbusSetting.g.cs
+C:\Pratik\Rohit\Git_RohitProjects_Code\Central LED\Central LED\obj\Debug\Controls\LiveDisplayController.baml
+C:\Pratik\Rohit\Git_RohitProjects_Code\Central LED\Central LED\obj\Debug\Controls\LiveDisplayController.g.cs
+C:\Pratik\Rohit\Git_RohitProjects_Code\Central LED\Central LED\obj\Debug\Controls\BlinkingLineDisplay.baml
+C:\Pratik\Rohit\Git_RohitProjects_Code\Central LED\Central LED\obj\Debug\Controls\ScrollingLineDisplay.baml
+C:\Pratik\Rohit\Git_RohitProjects_Code\Central LED\Central LED\obj\Debug\Controls\BlinkingLineDisplay.g.cs
+C:\Pratik\Rohit\Git_RohitProjects_Code\Central LED\Central LED\obj\Debug\Controls\ScrollingLineDisplay.g.cs
+C:\Pratik\Rohit\Git_RohitProjects_Code\Central LED\Central LED\obj\Debug\Central LED.csprojResolveAssemblyReference.cache
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\bin\Debug\Central LED.exe.config
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\obj\Debug\Central LED.exe
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\bin\Debug\Central LED.exe
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\bin\Debug\Central LED.pdb
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\obj\Debug\Controls\BlinkingLineDisplay.baml
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\obj\Debug\Controls\ScrollingLineDisplay.baml
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\obj\Debug\View\ModbusSetting.baml
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\obj\Debug\Controls\BlinkingLineDisplay.g.cs
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\obj\Debug\Controls\DisplayControl.g.cs
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\obj\Debug\Controls\LineSettingControl.g.cs
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\obj\Debug\Controls\LiveDisplayController.g.cs
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\obj\Debug\Controls\ScrollingLineDisplay.g.cs
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\obj\Debug\View\DisplaySetting.g.cs
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\obj\Debug\View\ModbusSetting.g.cs
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\obj\Debug\View\MainWindow.g.cs
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\obj\Debug\App.g.cs
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\obj\Debug\Central LED_MarkupCompile.cache
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\obj\Debug\Central LED_MarkupCompile.lref
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\obj\Debug\Controls\DisplayControl.baml
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\obj\Debug\Controls\LineSettingControl.baml
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\obj\Debug\Controls\LiveDisplayController.baml
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\obj\Debug\View\DisplaySetting.baml
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\obj\Debug\View\MainWindow.baml
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\obj\Debug\Central LED.g.resources
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\obj\Debug\Central_LED.Properties.Resources.resources
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\obj\Debug\Central LED.csproj.GenerateResource.Cache
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\obj\Debug\Central LED.pdb
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\obj\Debug\Controls\StaticLineDisplay.baml
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\obj\Debug\Controls\StaticLineDisplay.g.cs
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\obj\Debug\View\AboutUs.baml
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\obj\Debug\View\AboutUs.g.cs

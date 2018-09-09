@@ -33,6 +33,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>images.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -53,6 +56,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Controls\StaticLineDisplay.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\BlinkingLineDisplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controls\DisplayControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -61,9 +72,25 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Controls\LiveDisplayController.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ScrollingLineDisplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AboutUs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\DisplaySetting.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ModbusSetting.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="View\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -73,20 +100,46 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Controls\StaticLineDisplay.xaml.cs">
+      <DependentUpon>StaticLineDisplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BlinkingLineDisplay.xaml.cs">
+      <DependentUpon>BlinkingLineDisplay.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\DisplayControl.xaml.cs">
       <DependentUpon>DisplayControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\LineSettingControl.xaml.cs">
       <DependentUpon>LineSettingControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\LiveDisplayController.xaml.cs">
+      <DependentUpon>LiveDisplayController.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ScrollingLineDisplay.xaml.cs">
+      <DependentUpon>ScrollingLineDisplay.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Converter\LineControlGridVisibilityConverter.cs" />
+    <Compile Include="DAL\DbConnection.cs" />
+    <Compile Include="Entity\Display.cs" />
+    <Compile Include="Entity\Line.cs" />
+    <Compile Include="Entity\Modbus.cs" />
+    <Compile Include="Entity\StaticLineDataColumns.cs" />
     <Compile Include="Helper\Enums.cs" />
+    <Compile Include="ViewModel\AddressDataViewModel.cs" />
     <Compile Include="ViewModel\BaseViewModel.cs" />
     <Compile Include="ViewModel\DisplayControlViewModel.cs" />
     <Compile Include="ViewModel\DisplaySettingViewModel.cs" />
     <Compile Include="ViewModel\LineControlViewModel.cs" />
+    <Compile Include="ViewModel\MainWindowViewModel.cs" />
+    <Compile Include="ViewModel\ModbusSettingViewModel.cs" />
+    <Compile Include="View\AboutUs.xaml.cs">
+      <DependentUpon>AboutUs.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\DisplaySetting.xaml.cs">
       <DependentUpon>DisplaySetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ModbusSetting.xaml.cs">
+      <DependentUpon>ModbusSetting.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -120,7 +173,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Nakalank1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

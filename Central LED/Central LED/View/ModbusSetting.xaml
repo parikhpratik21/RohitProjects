@@ -1,0 +1,48 @@
+﻿<Window x:Class="Central_LED.ModbusSetting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Modbus Setting" Height="650" Width="600"
+        Closing="Window_Closing">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>           
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.7*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="0.6*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="0.55*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" Margin="0 0 10 0" Text="Device Id" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="0" Grid.Column="1"  Text="{Binding DeviceId}" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+
+        <TextBlock Grid.Row="0" Grid.Column="2" Margin="0 0 10 0" Text="ComPort" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <ComboBox Grid.Row="0" Grid.Column="3" ItemsSource="{Binding ComPortList}" Text="{Binding ComPort}" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+        
+        <TextBlock Grid.Row="2" Grid.Column="0" Margin="0 0 10 0" Text="Address" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Address}" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+
+        <TextBlock Grid.Row="2" Grid.Column="2" Margin="0 0 10 0" Text="Length" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="2" Grid.Column="3" Text="{Binding Length}" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+
+        <Button Grid.Row="0" Grid.Column="5" Width="70" Height="20" VerticalAlignment="Center" Content="Connect" x:Name="btnConnect" Click="btnConnect_Click"/>
+
+        <Button Grid.Row="4" Grid.Column="5" Width="70" Height="20" VerticalAlignment="Center" Content="Save" x:Name="btnSave" Click="btnSave_Click"/>
+
+        <Grid Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="6">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="286*"/>
+                <ColumnDefinition Width="245*"/>
+                <ColumnDefinition Width="41*"/>
+            </Grid.ColumnDefinitions>
+            <DataGrid Grid.Column="0" Margin="10" ItemsSource="{Binding FirstAddressData}"/>
+            <DataGrid Grid.Column="1" Margin="10" ItemsSource="{Binding SecondAddressData}" Grid.ColumnSpan="2"/>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,14 @@
+C:\Pratik\Rohit\Git_RohitProjects_Code\BarcodeScanner\BarcodeScanner\bin\Debug\BarcodeScanner.exe.config
+C:\Pratik\Rohit\Git_RohitProjects_Code\BarcodeScanner\BarcodeScanner\bin\Debug\BarcodeScanner.exe
+C:\Pratik\Rohit\Git_RohitProjects_Code\BarcodeScanner\BarcodeScanner\bin\Debug\BarcodeScanner.pdb
+C:\Pratik\Rohit\Git_RohitProjects_Code\BarcodeScanner\BarcodeScanner\obj\Debug\BarcodeScanner.csprojResolveAssemblyReference.cache
+C:\Pratik\Rohit\Git_RohitProjects_Code\BarcodeScanner\BarcodeScanner\obj\Debug\MainWindow.baml
+C:\Pratik\Rohit\Git_RohitProjects_Code\BarcodeScanner\BarcodeScanner\obj\Debug\MainWindow.g.cs
+C:\Pratik\Rohit\Git_RohitProjects_Code\BarcodeScanner\BarcodeScanner\obj\Debug\App.g.cs
+C:\Pratik\Rohit\Git_RohitProjects_Code\BarcodeScanner\BarcodeScanner\obj\Debug\BarcodeScanner_MarkupCompile.cache
+C:\Pratik\Rohit\Git_RohitProjects_Code\BarcodeScanner\BarcodeScanner\obj\Debug\BarcodeScanner.g.resources
+C:\Pratik\Rohit\Git_RohitProjects_Code\BarcodeScanner\BarcodeScanner\obj\Debug\BarcodeScanner.Properties.Resources.resources
+C:\Pratik\Rohit\Git_RohitProjects_Code\BarcodeScanner\BarcodeScanner\obj\Debug\BarcodeScanner.csproj.GenerateResource.Cache
+C:\Pratik\Rohit\Git_RohitProjects_Code\BarcodeScanner\BarcodeScanner\obj\Debug\BarcodeScanner.exe
+C:\Pratik\Rohit\Git_RohitProjects_Code\BarcodeScanner\BarcodeScanner\obj\Debug\BarcodeScanner.pdb
+C:\Pratik\Rohit\Git_RohitProjects_Code\BarcodeScanner\BarcodeScanner\obj\Debug\BarcodeScanner.csproj.ResolveComReference.cache

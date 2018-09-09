@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Pratik\Rohit\Git_RohitProjects_Code\Central LED\Central LED\obj\Debug\
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\obj\Debug\
 Central_LED
 none
 false
 DEBUG;TRACE
-C:\Pratik\Rohit\Git_RohitProjects_Code\Central LED\Central LED\App.xaml
-4-1407281353
+D:\Pratik\Central LED\SourceCode\Central LED\Central LED\App.xaml
+10-1349280827
 
-141505945084
+28-196034037
 12-1401562060
-Controls\DisplayControl.xaml;Controls\LineSettingControl.xaml;View\DisplaySetting.xaml;View\MainWindow.xaml;
+Controls\StaticLineDisplay.xaml;Controls\BlinkingLineDisplay.xaml;Controls\DisplayControl.xaml;Controls\LineSettingControl.xaml;Controls\LiveDisplayController.xaml;Controls\ScrollingLineDisplay.xaml;View\AboutUs.xaml;View\DisplaySetting.xaml;View\ModbusSetting.xaml;View\MainWindow.xaml;
 
 False
 
