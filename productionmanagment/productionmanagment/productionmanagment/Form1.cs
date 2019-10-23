@@ -1236,6 +1236,7 @@ namespace productionmanagment
             try
             {
                 timer2.Enabled = false;
+                this.ControlBox = false;
 
                 DateTime today = DateTime.Now;
 
@@ -1252,20 +1253,7 @@ namespace productionmanagment
                     software_started = false;
                 }
                 else
-                {
-                    file_read_counter++;
-                    if (file_read_counter > 5)
-                    {
-                        file_read_counter = 0;
-                        if (fileavile)
-                        {
-
-                            Thread m_serverThread = new Thread(() => readfile("3"));// new Thread(new  ParameterizedThreadStart(voicecallstart(a)));//soundpipe.voicesoundwrite(modems.Rows[a]["voiceport"].ToString(), Convert.ToInt32(modems.Rows[a]["voicePortSpeed"].ToString()), voicebuffer[a],a);
-                            m_serverThread.Start();
-
-                        }
-
-                    }
+                {                    
                     string h_date = today.Date.Day.ToString() + "-" + today.Date.Month.ToString() + "-" + today.Date.Year.ToString();
                     DATELABLE.Text = String.Format("{0:dd MMM}", today).ToUpper();
                     string weekday = String.Format("{0:ddd}", today).ToUpper();
@@ -1450,7 +1438,25 @@ namespace productionmanagment
                             shifttime = false;
                         }
 
+                        if (shifttime)
+                        {
+                            file_read_counter++;
+                            if (file_read_counter > 5)
+                            {
+                                file_read_counter = 0;
+                                if (fileavile)
+                                {
 
+                                    Thread m_serverThread = new Thread(() => readfile("3"));// new Thread(new  ParameterizedThreadStart(voicecallstart(a)));//soundpipe.voicesoundwrite(modems.Rows[a]["voiceport"].ToString(), Convert.ToInt32(modems.Rows[a]["voicePortSpeed"].ToString()), voicebuffer[a],a);
+                                    m_serverThread.Start();
+
+                                }
+                            }
+                        }
+                        else
+                        {
+                            this.ControlBox = true;
+                        }
                         if ((DateTime.Now - lastUpdatedDate).TotalSeconds > Convert.ToInt16(PLANNINGTIME.Text))
                         {
                             lastUpdatedDate = DateTime.Now;
@@ -1977,8 +1983,8 @@ namespace productionmanagment
         private void Form1_Shown(object sender, EventArgs e)
         {
 
-            timer3.Interval = 2000;
-            timer3.Enabled =true;
+           timer3.Interval = 2000;
+           timer3.Enabled =true;
         }
 
         private void progressBar1_Click(object sender, EventArgs e)
@@ -1989,8 +1995,7 @@ namespace productionmanagment
         private void timer3_Tick(object sender, EventArgs e)
         {
             try
-            {
-             
+            {             
                 timer3.Enabled = false;
                 if (fisrttimeread == false)
                 {

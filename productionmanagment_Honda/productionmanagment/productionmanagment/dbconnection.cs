@@ -8,6 +8,7 @@ using System.Data.SqlClient;
 using System.Configuration;
 using System.Data.OleDb;
 using System.Windows.Forms;
+using productionmanagment;
 
 namespace DBCON
 {
@@ -62,10 +63,12 @@ namespace DBCON
             catch (OleDbException sqlex)
             {
                 StrError = sqlex.Message;
+                LogManager.WriteErrors("DBConnection", "DBConnection", sqlex);
             }
             catch (Exception ex)
             {
                 StrError = ex.Message;
+                LogManager.WriteErrors("DBConnection", "DBConnection", ex);
             }
         }
         private void a_Click(object sender, EventArgs e)
@@ -81,10 +84,12 @@ namespace DBCON
             catch (OleDbException sqlex)
             {
                 StrError = sqlex.Message;
+                LogManager.WriteErrors("DBConnection", "Open_Connection", sqlex);
             }
             catch (Exception ex)
             {
-                StrError = ex.Message;  
+                StrError = ex.Message;
+                LogManager.WriteErrors("DBConnection", "Open_Connection", ex);
             }
         }
         public void Close_Connection()
@@ -127,6 +132,7 @@ namespace DBCON
             catch (OleDbException ex)
             {
                 con.Close();
+                LogManager.WriteErrors("DBConnection", "insert", ex);
             }
         }
         public void delete(string query)
@@ -142,8 +148,9 @@ namespace DBCON
                 cmd.CommandType = CommandType.Text;
                 cmd.ExecuteNonQuery();
             }
-            catch (OleDbException )
+            catch (OleDbException sqlex)
             {
+                LogManager.WriteErrors("DBConnection", "delete", sqlex);
                 con.Close();
             }
         }
@@ -173,9 +180,10 @@ namespace DBCON
                 }
           
             }
-            catch (OleDbException)
+            catch (OleDbException ex)
             {
                 READING = false;
+                LogManager.WriteErrors("DBConnection", "update", ex);
           
             }
             READING = false;
@@ -209,12 +217,14 @@ namespace DBCON
                 catch(Exception ex)
                 {
                     status = ex.ToString();
+                    LogManager.WriteErrors("DBConnection", "updatemodem", ex);
                 }
              }
             catch (OleDbException ex)
             {
                 READING = false;
                 status = ex.ToString();
+                LogManager.WriteErrors("DBConnection", "updatemodem", ex);
             }
             READING = false;
           
@@ -244,9 +254,10 @@ namespace DBCON
                 }
                 catch { }
             }
-            catch (OleDbException )
+            catch (OleDbException ex)
             {
                 READING = false;
+                LogManager.WriteErrors("DBConnection", "insertcall", ex);
             }
             READING = false;
        }
@@ -269,8 +280,9 @@ namespace DBCON
                 }
                 catch { }
             }
-            catch (OleDbException)
+            catch (OleDbException ex)
             {
+                LogManager.WriteErrors("DBConnection", "Update_sim_remark_byid", ex);
             }
         }
         public void Update_sim_remarks_bysim(string sim, string mo_no, string remark)
@@ -290,10 +302,13 @@ namespace DBCON
                     cmd.ExecuteNonQuery();
 
                 }
-                catch { }
+                catch(Exception ex) {
+                    LogManager.WriteErrors("DBConnection", "Update_sim_remarks_bysim", ex);
+                }
             }
-            catch (OleDbException)
+            catch (OleDbException ex)
             {
+                LogManager.WriteErrors("DBConnection", "Update_sim_remarks_bysim", ex);
             }
         }
         public void insert_sim_remarks(string sim, string mo_no, string remark)
@@ -316,8 +331,9 @@ namespace DBCON
                 }
                 catch { }
             }
-            catch (OleDbException)
+            catch (OleDbException ex)
             {
+                LogManager.WriteErrors("DBConnection", "insert_sim_remarks", ex);
             }
         }
         public DataTable updatesmscounter(int ch,Int64 smsremain)
@@ -336,11 +352,14 @@ namespace DBCON
                     }
                     cmd.ExecuteNonQuery();
                 }
-                catch { }
+                catch(Exception ex) {
+                    LogManager.WriteErrors("DBConnection", "updatesmscounter", ex);
+                }
                 
             }
-            catch (OleDbException)
+            catch (OleDbException ex)
             {
+                LogManager.WriteErrors("DBConnection", "updatesmscounter", ex);
             }
             return gettable("select * from modem");
         }
@@ -448,7 +467,6 @@ namespace DBCON
 
                 }
                 catch { }
-
             }
             catch (OleDbException)
             {
@@ -742,12 +760,15 @@ namespace DBCON
                     //con.Close();
 
                 }
-                catch { }
+                catch(Exception ex) {
+                    LogManager.WriteErrors("DBConnection", "updatesetting", ex);
+                }
                
 
             }
-            catch (OleDbException )
+            catch (OleDbException ex)
             {
+                LogManager.WriteErrors("DBConnection", "updatesetting", ex);
             }
         }
          public void updateproduction(int id, string plan, string actual)
@@ -770,12 +791,15 @@ namespace DBCON
                      //con.Close();
 
                  }
-                 catch { }
+                 catch(Exception ex) {
+                     LogManager.WriteErrors("DBConnection", "updateProduction", ex);
+                 }
 
 
              }
-             catch (OleDbException)
+             catch (OleDbException ex)
              {
+                 LogManager.WriteErrors("DBConnection", "updateProduction", ex);
              }
          }
          

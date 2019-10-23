@@ -1131,6 +1131,8 @@ namespace productionmanagment
         {
             try
             {
+                LogManager.WriteErrors("Form1", "Test", new Exception("Test 1"));
+                LogManager.WriteErrors("Form1", "Test", new Exception("Test 2"));
                 string path = Application.StartupPath.ToString() + "\\timeout.txt";
                 StreamReader a = new StreamReader(path);
                 timeout = Convert.ToInt16(a.ReadLine());

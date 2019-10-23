@@ -60,6 +60,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="LogManager.cs" />
     <Compile Include="PasswordBox.cs">
       <SubType>Form</SubType>
     </Compile>
